@@ -1,0 +1,18 @@
+version: 0.1.0
+name: app 
+description: Foundries.io app example
+
+---
+
+version: '3.2'
+
+services:
+  nginx:
+    image: hub.foundries.io/munoz0raul/app:latest
+    restart: always
+    ports:
+      - 80:${PORT}
+
+---
+
+PORT: 80
