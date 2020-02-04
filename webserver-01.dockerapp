@@ -1,0 +1,18 @@
+version: 1.0.0
+name: webserver-01
+description: Foundries.io webserver-01 example
+
+---
+
+version: '1.0'
+
+services:
+  nginx:
+    image: hub.foundries.io/munoz0raul/webserver-01:latest
+    restart: always
+    ports:
+      - 80:${PORT}
+
+---
+
+PORT: 80
