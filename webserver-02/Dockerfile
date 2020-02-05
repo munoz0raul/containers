@@ -6,4 +6,4 @@ RUN rm 50x.html
 
 COPY index.html index.html
 
-COPY logo.jpg logo.jpg
+COPY assets assets
